@@ -450,9 +450,9 @@ textarea:-moz-placeholder,
 select:-moz-placeholder { /* Firefox 18- */
   color: #fff;
 }
-input.error,
-textarea.error,
-select.error {
+input.error-form,
+textarea.error-form,
+select.error-form {
   border-bottom: 1px solid #f00;
 }
 
@@ -737,6 +737,15 @@ textarea {
   width: 100%;
   background-color: #1ba4ce;
   padding: 80px 40px;
+}
+.appointment form .appointment-message {
+  width: 100%;
+}
+.appointment form .appointment-message.error {
+  color: red;
+}
+.appointment form .appointment-message.send {
+  color: white;
 }
 @media all and (min-width: 992px) {
   .appointment form {
